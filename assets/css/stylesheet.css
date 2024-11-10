@@ -51,7 +51,7 @@ h3 {
     grid-template-areas: 
     'fire lightning';
 
-    @media (max-width: 700px) {
+    @media screen and (max-width: 700px) {
         body {
             display:grid;
             grid-template-columns: 1fr;
@@ -73,7 +73,7 @@ h3 {
     margin: 100px;
     border: solid grey;
 
-    @media (max-width: 700px) {
+    @media screen and (max-width: 700px) {
         body {
             width: 250px;
             height: 250px;
