@@ -45,8 +45,23 @@ h3 {
 }
 
 .rowimg {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-template-areas: 
+    'fire lightning';
+
+    @media (max-width: 700px) {
+        body {
+            display:grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            grid-template-areas: 
+            'fire',
+            'lightning',
+        }
+
+    }
 }
 
 .colimg {
@@ -56,5 +71,26 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 100px;
+    border: solid grey;
+
+    @media (max-width: 700px) {
+        body {
+            width: 250px;
+            height: 250px;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 100px;
+            border: solid grey;
+        }
+    }
+}
+
+.colimg--fire {
+    grid-area: fire;
+}
+
+.colimg--lightning {
+    grid-area: lightning;
 }
 
