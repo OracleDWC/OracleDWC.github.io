@@ -7,13 +7,46 @@
     <title>This is the title of the webpage!</title>
   </head>
   <body>
-    <div class="bgimg-1">
-        <div class="caption">
-            <span class="border">Make Sure to Bookmark this Page for future Updates!</span>
-        </div>
-    </div>
+  <!-- Sidebar/menu -->
+    <nav class="sidebar font-red sidebar-collapse sizing-top font-large sizing-padding" style="z-index:3;width:300px;" id="mySidebar"><br>
+      <a href="javascript:void(0)" onclick="sidebar_close()" class="sidebar-button sidebar-hide-large sidebar-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+      <div class="sidebar-container">
+        <h3 class="sizing-padding-64"><b>Shinobi<br>News</b></h3>
+      </div>
+      <div class="sidebar-bar-block">
+        <a href="#" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Home</a> 
+        <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler</a> 
+        <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler</a> 
+        <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler</a> 
+        <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler</a> 
+        <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler</a>
+      </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="sidebar-container sizing-top sidebar-hide-large font-red font-xlarge sizing-padding">
+      <a href="javascript:void(0)" class="sidebar-button font-red sidebar-margin-right" onclick="sidebar_open()">☰</a>
+      <span>Shinobi News</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="sidebar-overlay sidebar-hide-large" onclick="sidebar_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="sizing-main" style="margin-left:340px;margin-right:40px">
+
+      <!-- Header -->
+      <div class="sidebar-container" style="margin-top:80px" id="showcase">
+        <div class="page__home__content">
+          <div class="bgimg-1">
+              <div class="caption">
+                  <span class="border">Make Sure to Bookmark this Page for future Updates!</span>
+              </div>
+          </div>
+      </div>
       
-    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: center;">
+      <!-- Notice -->
+      <div style="color: #111;background-color:white;text-align:center;padding:50px 80px;text-align: center;">
         <h3 style="text-align:center;">Information</h3>
             <p>
                 This site will serve to be our wiki for our campaign. 
@@ -22,12 +55,41 @@
                 If you have ideas, feel free to reach out and we can collaborate on what else we want to add to this site!
             </p>
     </div>
+    
+      <!-- Image Selection -->
+      <div class="img__grid">
+        <img class="village__img" src="images/fire_fox.jpg">
+        <img class="village__img" src="images/microsoctopus.jpg">
+      </div>
 
-    <div class = "rowimg">
-        <div class = "colimg colimg--fire" style="background-image: url('images/fire_fox.jpg');">
-        </div>
-        <div class = "colimg colimg--lightning" style="background-image: url('images/microsoctopus.jpg');">
-        </div>
+    <!-- End page content -->
     </div>
+
+    <!-- Footer -->
+    <div class="font-light-grey sidebar-container sizing-padding-32" style="margin-top:75px;padding-right:58px">
+      <p class="sizing-right">Footer</p>
+    </div>
+  <script>
+    
+  // Script to open and close sidebar
+  function sidebar_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function sidebar_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+
+  </script>
   </body>
 </html>
