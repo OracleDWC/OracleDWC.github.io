@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
-    <title>This is the title of the webpage!</title>
+    <title>Shinobi News</title>
   </head>
+  <script src="assets/js/navscript.js"></script>
   <body>
   <!-- Sidebar/menu -->
-    <nav class="sidebar font-red sidebar-collapse sizing-top font-large sizing-padding" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <nav class="sidebar font-green sidebar-collapse sizing-top font-large sizing-padding" style="z-index:3;width:300px;" id="mySidebar"><br>
       <a href="javascript:void(0)" onclick="sidebar_close()" class="sidebar-button sidebar-hide-large sidebar-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
       <div class="sidebar-container">
         <h3 class="sizing-padding-64"><b>Shinobi<br>News</b></h3>
       </div>
       <div class="sidebar-bar-block">
         <a href="#" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Home</a> 
-        <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler</a> 
-        <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler</a> 
-        <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler</a> 
+        <a href="pages/rules/rules.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Rules</a> 
+        <a href="pages/tables/tables.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Tables</a> 
+        <a href="pages/timeline/timeline.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Timeline</a> 
         <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler</a> 
         <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler</a>
       </div>
     </nav>
 
     <!-- Top menu on small screens -->
-    <header class="sidebar-container sizing-top sidebar-hide-large font-red font-xlarge sizing-padding">
-      <a href="javascript:void(0)" class="sidebar-button font-red sidebar-margin-right" onclick="sidebar_open()">☰</a>
+    <header class="sidebar-container sizing-top sidebar-hide-large font-green font-xlarge sizing-padding">
+      <a href="javascript:void(0)" class="sidebar-button font-green sidebar-margin-right" onclick="sidebar_open()">☰</a>
       <span>Shinobi News</span>
     </header>
 
@@ -36,7 +37,7 @@
     <div class="sizing-main" style="margin-left:340px;margin-right:40px">
 
       <!-- Header -->
-      <div class="sidebar-container" style="margin-top:80px" id="showcase">
+      <div class="sidebar-container" style="margin-top:80px">
         <div class="page__home__content">
           <div class="bgimg-1">
               <div class="caption">
@@ -58,8 +59,21 @@
     
       <!-- Image Selection -->
       <div class="img__grid">
-        <img class="village__img" src="images/fire_fox.jpg">
-        <img class="village__img" src="images/microsoctopus.jpg">
+        <label class="village__label">Fire Fox
+          <img class="village__img" src="images/fire_fox.jpg">
+        </label>
+        <lable class="village__label">Microsoctopus
+          <img class="village__img" src="images/microsoctopus.jpg">
+        </lable>
+        <lable class="village__label">Tanuki
+          <img class="village__img" src="images/Tanuki.jpg">
+        </lable>
+        <lable class="village__label">Sword Point
+          <img class="village__img" src="images/swordpoint.jpg">
+        </lable>
+        <lable class="village__label">Stone Toss
+          <img class="village__img" src="images/stonetoss.jpg">
+        </lable>
       </div>
 
     <!-- End page content -->
@@ -69,27 +83,5 @@
     <div class="font-light-grey sidebar-container sizing-padding-32" style="margin-top:75px;padding-right:58px">
       <p class="sizing-right">Footer</p>
     </div>
-  <script>
-    
-  // Script to open and close sidebar
-  function sidebar_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-  }
-  
-  function sidebar_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-  }
-
-  // Modal Image Gallery
-  function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-    var captionText = document.getElementById("caption");
-    captionText.innerHTML = element.alt;
-  }
-
-  </script>
   </body>
 </html>
