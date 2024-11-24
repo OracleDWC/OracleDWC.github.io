@@ -1,4 +1,3 @@
-/* HTML BODY HEADINGS*/
 html {
     box-sizing: border-box
 }
@@ -88,31 +87,6 @@ a:link {
     float: right!important
 }
 
-
-/* Font */
-.font-xlarge {
-    font-size: 24px !important;
-}
-
-.font-large {
-    font-size: 18px;
-}
-
-.font-green {
-    color: #fff!important;
-    background-color: #85b389!important;
-}
-
-.font-white,.font-hover-white:hover {
-    color: #000!important;
-    background-color: #fff!important
-}
-
-.font-light-grey {
-    color: #000!important;
-    background-color: #f1f1f1!important
-}
-
 /* Side Bar */
 .sidebar {
     height: 100%;
@@ -166,63 +140,29 @@ a:link {
     z-index: 2
 }
 
-/* Content */
-.bgimg-1 {
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: solid #111;
+/* Font */
+.font-xlarge {
+    font-size: 24px !important;
 }
 
-.bgimg-1 {
-    background-image: url("/images/Adjusted_World_Map.png");
-    height: 400px;
+.font-large {
+    font-size: 18px;
 }
 
-.caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
+.font-green {
+    color: #fff!important;
+    background-color: #85b389!important;
 }
 
-.caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
+.font-white,.font-hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important
 }
 
-.img__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        'fire lightning'
-        'wind water'
-        'earth .';
-    justify-items: center;
-    gap: 20px;
+.font-light-grey {
+    color: #000!important;
+    background-color: #f1f1f1!important
 }
-
-.village__img {
-    width: 300px;
-    height: 300px;
-    border: solid 2px #111;
-    font-family: Verdana,sans-serif;
-}
-
-.village__label {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    font-weight: 700;
-    background: #dfdfdf;
-}
-
 
 /* Media Queries */
 @media (min-width: 1025px) {
@@ -239,34 +179,4 @@ a:link {
     .sidebar.sidebar-collapse {
         display:none
     }
-
-    .sizing-main {
-        margin-left: 0!important;
-        margin-right: 0!important
-    }
-
-    .img__grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        'fire'
-        'lightning'
-        'wind'
-        'earth';
-        justify-items: center;
-    }
-
-    .village__img {
-        width: 200px;
-        height: 200px;
-        border: solid #111;
-    }
-
-    .caption span.border {
-        background-color: #111;
-        color: #fff;
-        padding: 3px;
-        font-size: 25px;
-    }
 }
-
