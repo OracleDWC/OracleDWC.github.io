@@ -169,10 +169,11 @@ a:link {
     min-height: auto;
     min-width: auto;
 }
+
 details {
-    margin: 1rem auto;
     padding: 0 1rem;
-    width: 35em;
+    margin: 20px 0;
+    width: 50em;
     max-width: calc(100% - 2rem);
     position: relative;
     border: 1px solid #78909C;
@@ -213,7 +214,7 @@ details {
     padding: 1rem 2em 1rem 0;
     display: block;
     position: relative;
-    font-size: 1.33em;
+    font-size: 1.0em;
     font-weight: bold;
     cursor: pointer;
     
@@ -238,6 +239,10 @@ details {
         transform: translateY(-50%) rotate(180deg);
       }
     }
+}
+
+.details__body {
+    font-family: Verdana,sans-serif;
 }
 
 /* Media Queries */
