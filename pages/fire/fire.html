@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="fire_stylesheet.css">
+        <title>Shinobi News</title>
+    </head>
+    <script src="/assets/js/navscript.js"></script>
+    <body>
+        <nav class="sidebar font-green sidebar-collapse sizing-top font-large sizing-padding" style="z-index:3;width:300px;" id="mySidebar"><br>
+            <a href="javascript:void(0)" onclick="sidebar_close()" class="sidebar-button sidebar-hide-large sidebar-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+            <div class="sidebar-container">
+              <h3 class="sizing-padding-64"><b>Shinobi<br>News</b></h3>
+            </div>
+            <div class="sidebar-bar-block">
+              <a href="/index.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Home</a> 
+              <a href="/pages/rules/rules.html" class="sidebar-bar-item sidebar-button font-hover-white">Rules</a> 
+              <a href="/pages/tables/tables.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Tables</a> 
+              <a href="/pages/timeline/timeline.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Timeline</a>
+              <details class="sidebar-bar-details sidebar-button font-hover-underline">
+                <summary class="sidebar-villages">Villages</summary>
+                <a href="/pages/lightning/lightning.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Cloud</a>
+                <a href="/pages/fire/fire.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Leaf</a>
+                <a href="/pages/earth/earth.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Stone</a>
+                <a href="/pages/water/water.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Mist</a>
+                <a href="/pages/wind/wind.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Sand</a>
+              </details>
+              <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler</a>
+            </div>
+          </nav>
+
+          <!-- Top menu on small screens -->
+        <header class="sidebar-container sizing-top sidebar-hide-large font-green font-xlarge sizing-padding">
+            <a href="javascript:void(0)" class="sidebar-button font-green sidebar-margin-right" onclick="sidebar_open()">☰</a>
+        <span>Shinobi News</span>
+        </header>
+
+          <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="sidebar-overlay sidebar-hide-large" onclick="sidebar_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+        <!-- !PAGE CONTENT! -->
+        <div class="sizing-main" style="margin-left:340px;margin-right:40px">
+            <!-- Header -->
+            <div class="sidebar-container" style="margin-top:60px">
+                <h1 class="font-green sizing-padding">Leaf</h1>
+
+                <!-- Image Gallery -->
+                <div class="gallery">
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--kohaku" src="/images/Kohaku.png">
+                        <p class="gallery__display__label font-large">Kohaku Kuruma</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--ichika" src="/images/Ichika.png">
+                        <p class="gallery__display__label font-large">Ichika Shimura</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--tomura" src="/images/Tomura.png">
+                        <p class="gallery__display__label font-large">Tomura Aburame</p>
+                    </div>
+                    <div class="gallery__display gallery__display--gochi">
+                        <img class="gallery__display__image gallery__display__image--gochi" src="/images/Gochi.png">
+                        <p class="gallery__display__label font-large">Gochi Reikyou</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--kuro" src="/images/Kuro.png">
+                        <p class="gallery__display__label font-large">Kuro Yami</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--lumi" src="/images/Lumi.png">
+                        <p class="gallery__display__label font-large">Lumi Sarutobi</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--nalu" src="/images/Nalu.png">
+                        <p class="gallery__display__label font-large">Nalu Ryu</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--beni" src="/images/Benimaru_H.png">
+                        <p class="gallery__display__label font-large">Benimaru Hyuuga</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--ayaka" src="/images/Ayaka.png">
+                        <p class="gallery__display__label font-large">Ayaka Yamanaka</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--ayaka" src="/images/Kammado.png">
+                        <p class="gallery__display__label font-large">Kammado Sarutobi</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--roshi" src="/images/Roshi.png">
+                        <p class="gallery__display__label font-large">Roshi Kameh</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--sho" src="/images/Sho.png">
+                        <p class="gallery__display__label font-large">Sho Uzumaki</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--ruka" src="/images/Ruka.png">
+                        <p class="gallery__display__label font-large">Ruka Uchiha</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--miyuki" src="/images/Miythreegi.png">
+                        <p class="gallery__display__label font-large">Miyuki Hyuuga</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--reiki" src="/images/reiki.png">
+                        <p class="gallery__display__label font-large">Reiki Kodama</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--makoto" src="/images/Makoto.png">
+                        <p class="gallery__display__label font-large">Makoto Uzumaki</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--ichigo" src="/images/Ichigo.png">
+                        <p class="gallery__display__label font-large">Ichigo Nara</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--obi" src="/images/obi.png">
+                        <p class="gallery__display__label font-large">Obi Uzumaki</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--phoenix" src="/images/Phoenix.png">
+                        <p class="gallery__display__label font-large">Phoenix</p>
+                    </div>
+                <!-- End page content -->
+                </div>
+                
+                <!-- Footer -->
+                <div class="font-light-grey sidebar-container sizing-padding-32" style="margin-top:75px;padding-right:58px">
+                    <p class="sizing-right">Footer</p>
+                </div>
+            </div>
+        </div>
