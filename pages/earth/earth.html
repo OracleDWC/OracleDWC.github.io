@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="timeline_stylesheet.css">
+        <link rel="stylesheet" href="earth_stylesheet.css">
         <title>Shinobi News</title>
     </head>
     <script src="/assets/js/navscript.js"></script>
@@ -17,7 +17,7 @@
               <a href="/index.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Home</a> 
               <a href="/pages/rules/rules.html" class="sidebar-bar-item sidebar-button font-hover-white">Rules</a> 
               <a href="/pages/tables/tables.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Tables</a> 
-              <a href="#" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Timeline</a> 
+              <a href="/pages/timeline/timeline.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Timeline</a>
               <details class="sidebar-bar-details sidebar-button font-hover-underline">
                 <summary class="sidebar-villages">Villages</summary>
                 <a href="/pages/lightning/lightning.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Cloud</a>
@@ -38,5 +38,45 @@
 
           <!-- Overlay effect when opening sidebar on small screens -->
         <div class="sidebar-overlay sidebar-hide-large" onclick="sidebar_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-    </body>
-</html>
+
+        <!-- !PAGE CONTENT! -->
+        <div class="sizing-main" style="margin-left:340px;margin-right:40px">
+            <!-- Header -->
+            <div class="sidebar-container" style="margin-top:60px">
+                <h1 class="font-green sizing-padding">Stone</h1>
+
+                <!-- Image Gallery -->
+                <div class="gallery">
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--fuko" src="/images/Fuko_Jogante.png">
+                        <p class="gallery__display__label font-large">Fuko Jogante</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--jotashi" src="/images/Jotashi_Daikiri.png">
+                        <p class="gallery__display__label font-large">Jotashi Daikiri</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--jotashi" src="/images/Shigeo_Kamizuru.png">
+                        <p class="gallery__display__label font-large">Shigeo </p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--kira" src="/images/Kira_Shiroendo.jpg">
+                        <p class="gallery__display__label font-large">Kira Shiroendo</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--seiji" src="/images/Seiji_Ishimaru.png">
+                        <p class="gallery__display__label font-large">Seiji Ishimaru</p>
+                    </div>
+                    <div class="gallery__display">
+                        <img class="gallery__display__image gallery__display__image--seiji" src="/images/Josuke_Daikiri.png">
+                        <p class="gallery__display__label font-large">Josuke Daikiri</p>
+                    </div>
+                <!-- End page content -->
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="font-light-grey sidebar-container sizing-padding-32" style="margin-top:75px;padding-right:58px">
+                <p class="sizing-right">Footer</p>
+            </div>
+        </div>

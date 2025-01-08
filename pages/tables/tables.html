@@ -18,7 +18,14 @@
               <a href="/pages/rules/rules.html" class="sidebar-bar-item sidebar-button font-hover-white">Rules</a> 
               <a href="#" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Tables</a> 
               <a href="/pages/timeline/timeline.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Timeline</a> 
-              <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler1</a> 
+              <details class="sidebar-bar-details sidebar-button font-hover-underline">
+                <summary class="sidebar-villages">Villages</summary>
+                <a href="/pages/lightning/lightning.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Cloud</a>
+                <a href="/pages/fire/fire.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Leaf</a>
+                <a href="/pages/earth/earth.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Stone</a>
+                <a href="/pages/water/water.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Mist</a>
+                <a href="/pages/wind/wind.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Sand</a>
+              </details>
               <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler</a>
             </div>
           </nav>
@@ -38,8 +45,8 @@
         <div class="sidebar-container" style="margin-top:60px">
           <h1 class="font-green sizing-padding">Tables</h1>
 
-          <details>
-            <summary>Speed Ranks</summary>
+          <details class="details__content">
+            <summary class="summary__content">Speed Ranks</summary>
             <p class="details__body">
               Characters that are helpless, paralyzed, immobilized, grappled or pinned are automatically reduced to speed rank 0. 
               You take a -1 Speed Rank penalty while wear-ing medium armor, or a -3 penalty while wearing heavy armor.The four types of 
@@ -392,8 +399,8 @@
               </div>
             </div>
         </details>
-        <details>
-          <summary>Strength Ranks</summary>
+        <details class="details__content">
+          <summary class="summary__content">Strength Ranks</summary>
           <p class="details__body">
             In addition to the benefits as shown below, Strength Ranks permanently increase your carrying capacity as though your Strength 
             were increased by 1 per Strength Rank you have obtained.</p>
@@ -675,8 +682,8 @@
             </div>
           </div>
       </details>
-      <details>
-        <summary>Mastery</summary>
+      <details class="details__content">
+        <summary class="summary__content">Mastery</summary>
         <p class="details__body">
           When you already know a technique, you can start to master it. Mastery has 5 steps, and is applied to individual techniques. 
           Mastery can offer special benefits at a certain step, or might be required in order to learn oth-er techniques, abilities or even to become a 

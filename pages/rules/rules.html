@@ -18,7 +18,14 @@
               <a href="#" class="sidebar-bar-item sidebar-button font-hover-white">Rules</a> 
               <a href="/pages/tables/tables.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Tables</a> 
               <a href="/pages/timeline/timeline.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Timeline</a> 
-              <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler</a> 
+              <details class="sidebar-bar-details sidebar-button font-hover-underline">
+                <summary class="sidebar-villages">Villages</summary>
+                <a href="/pages/lightning/lightning.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Cloud</a>
+                <a href="/pages/fire/fire.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Leaf</a>
+                <a href="/pages/earth/earth.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Stone</a>
+                <a href="/pages/water/water.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Mist</a>
+                <a href="/pages/wind/wind.html" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Sand</a>
+              </details>
               <a href="#Filler" onclick="sidebar_close()" class="sidebar-bar-item sidebar-button font-hover-white">Filler</a>
             </div>
           </nav>
@@ -43,8 +50,8 @@
            <h2 class="font-green sizing-padding">Modern D20</h2>
 
           <!-- Modern D20 Details -->
-          <details>
-            <summary>Actions</summary>
+          <details class="details__content">
+            <summary class="summary__content">Actions</summary>
             <p class="details__body">The four types of actions are attack actions, move
               actions, full-round actions, and free actions.
               Every round, on your turn, you may take an attack action
@@ -80,8 +87,8 @@
               undertake in a single round.
             </p>
           </details>
-          <details>
-            <summary>Attack Options</summary>
+          <details class="details__content">
+            <summary class="summary__content">Attack Options</summary>
             <p class="details__body"> When attacking, you have several options</p>
             <p class="details__body"> <span style="font-weight: 700;">Attack:</span>
               You can make a single attack.
@@ -112,8 +119,8 @@
               +2 to melee and ranged attack rolls when invisible. The defender loses any Dexterity bonus to their Defense.
             </p>
           </details>
-          <details>
-            <summary>Base Attack Bonus</summary>
+          <details class="details__content">
+            <summary class="summary__content">Base Attack Bonus</summary>
             <p class="details__body">Add the base attack bonuses for each class to get the
               base attack bonus. A resulting value of +6 or higher provides
               the hero with multiple attacks.</p>
@@ -126,8 +133,8 @@
               <p class="details__body">To use multiple attacks in the same round, you must use a
                 full attack, which is a full-round action.</p>
           </details>
-          <details>
-            <summary>Cover</summary>
+          <details class="details__content">
+            <summary class="summary__content">Cover</summary>
             <p class="details__body">
               One of the best defenses available is cover. By taking cover
               behind a tree, a car, or the corner of a building, you can protect
@@ -153,8 +160,8 @@
               </p>
             </p>
           </details>
-          <details>
-            <summary>Coup de Grace</summary>
+          <details class="details__content">
+            <summary class="summary__content">Coup de Grace</summary>
             <p class="details__body">
               As a full-round action, you can use a melee weapon to
               deliver a coup de grace to a helpless foe. You can also use a
@@ -169,8 +176,8 @@
               is immune to critical hits, such as a zombie.
             </p>
           </details>
-          <details>
-            <summary>Disabled, Dying, Dead</summary>
+          <details class="details__content">
+            <summary class="summary__content">Disabled, Dying, Dead</summary>
             <p class="details__body">Your hit points represent how much damage you can take
               before being disabled, knocked unconscious, or killed.</p>
             <p class="details__body"> <span style="font-weight: 700;">1 or More Hit Points:</span>
@@ -199,8 +206,8 @@
               If your hit points fall to –10 or lower, you’re dead.
             </p>
           </details>
-          <details>
-            <summary>Flanking</summary>
+          <details class="details__content">
+            <summary class="summary__content">Flanking</summary>
             <p class="details__body">If you are making a melee attack against an opponent and
               an ally directly opposite you is threatening the opponent,
               you and your ally flank the opponent. You gain a +2 bonus
@@ -210,14 +217,14 @@
               You don’t gain a bonus for flanking when making a ranged
               attack.</p>
           </details>
-          <details>
-            <summary>Rounds</summary>
+          <details class="details__content">
+            <summary class="summary__content">Rounds</summary>
             <p class="details__body">Combat is divided into rounds. In every round, each combatant
               gets to do something. A round represents 6 seconds
               in the game world.</p>
           </details>
-          <details>
-            <summary>Spell Resistance</summary>
+          <details class="details__content">
+            <summary class="summary__content">Spell Resistance</summary>
             <p class="details__body">
               A creature with spell resistance
               can avoid the effects of spells and spell-like abilities that
@@ -233,8 +240,8 @@
           <h2 class="font-green sizing-padding">Community Compendium</h2>
 
           <!-- Comunity Compendium Details -->
-          <details>
-            <summary>Variant Critical</summary>
+          <details class="details__content">
+            <summary class="summary__content">Variant Critical</summary>
             <p class="details__body">Each time a critical hit against a humanoid is
               confirmed, roll a d% and implement an effect according
               to the options below.</p>
@@ -438,8 +445,8 @@
           <h2 class="font-green sizing-padding">Redux</h2>
 
           <!-- Redux Details -->
-          <details>
-              <summary>Avoidance</summary>
+          <details class="details__content">
+              <summary class="summary__content">Avoidance</summary>
               <p class="details__body">
                 Techniques that can Avoid an Attack or which can be
                 used as a Defensive Maneuver are few and far between,
@@ -513,8 +520,8 @@
                 the rest of the day).
               </p>
             </details>
-          <details>
-            <summary>Player Chakra</summary>
+          <details class="details__content">
+            <summary class="summary__content">Player Chakra</summary>
             <p class="details__body">
               A character's Chakra is divided into two categories: Chakra Pool and Chakra Reserve. 
               Chakra Pool is the amount of Chakra readily available to a character. 
@@ -534,8 +541,8 @@
               Temporary Chakra cannot make you exceed your maximum Chakra.
             </p>
           </details>
-          <details>
-            <summary>Chakra Recovery</summary>
+          <details class="details__content">
+            <summary class="summary__content">Chakra Recovery</summary>
             <p class="details__body">
               A night's rest restores your entire Chakra Pool, as well as one Chakra Reserve per level.
             </p>
@@ -557,8 +564,8 @@
               Once your Chakra Reserves and Chakra Pool recover fully (not counting temporary Chakra), you are no longer depleted.
             </p>
           </details>
-          <details>
-            <summary>Chakra Damage</summary>
+          <details class="details__content">
+            <summary class="summary__content">Chakra Damage</summary>
             <p class="details__body"> <span style="font-weight: 700;">Chakra Damage:</span>
               This damage is subtracted directly from a character's Chakra Pool. 
               Against targets with an empty Chakra Pool, Chakra Damage is doubled and applied to the target's hit points instead.
@@ -568,8 +575,8 @@
               Permanent CCD does not heal naturally.
             </p>
           </details>
-          <details>
-            <summary>Chakra Signatures</summary>
+          <details class="details__content">
+            <summary class="summary__content">Chakra Signatures</summary>
             <p class="detailis__body">
               Chakra Signatures have different categories, affecting your ability to locate them and identify their sources 
               while using Sense Chakra. Signature Strength is based on the current Chakra Pool of the carrier.
@@ -600,8 +607,8 @@
               Identify: Possibly even if not yet encountered.
             </p>
           </details>
-          <details>
-            <summary>Sense Chakra</summary>
+          <details class="details__content">
+            <summary class="summary__content">Sense Chakra</summary>
             <p class="details__body">
               You can activate this ability by concentrating for an attack action. The ability remains active for as long as you 
               continue to concentrate, plus 1d3 rounds.
@@ -620,8 +627,8 @@
               discern a broad category of effect it belongs to.
             </p>
           </details>
-          <details>
-            <summary>Suppress Chakra</summary>
+          <details class="details__content">
+            <summary class="summary__content">Suppress Chakra</summary>
             <p class="details__body">
               To activate this ability, you must concentrate for one full round. While active, creatures attempting to Sense or 
               See your Chakra Signature will detect it as though it were one category lower in strength.
@@ -631,8 +638,8 @@
               HD you have afterward. Concentrating on this ability is a swift action each round, or an attack action when stressed or threatened.
             </p>
           </details>
-          <details>
-            <summary>See Chakra</summary>
+          <details class="details__content">
+            <summary class="summary__content">See Chakra</summary>
             <p class="details__body">
               This ability is granted by several bloodlines or techniques, which indicate how it can be activated.
               While active, you can see Chakra within your normal line of sight, allowing you to detect the Chakra Signature strength of 
@@ -645,8 +652,8 @@
               depending on the strength of the aura as shown, giving you a general idea of the type of effect that made the traces.
             </p>
           </details>
-          <details>
-            <summary>See Through Chakra</summary>
+          <details class="details__content">
+            <summary class="summary__content">See Through Chakra</summary>
             <p class="details__body">
               Functions like See Chakra (above), and grants a +4 circumstance bonus to Spot checks to detect or identify Chakra Signatures and activities. 
               You also gain a +2 resistance bonus to Will saves to disbelieve Genjutsu techniques.
@@ -655,16 +662,16 @@
               you can see whether it is actively using a bloodline ability, Speed Ranks and Strength Ranks.
             </p>
           </details>
-          <details>
-            <summary>Chakra Resistance</summary>
+          <details class="details__content">
+            <summary class="summary__content">Chakra Resistance</summary>
             <p class="details__body">
               This quality reflects an ability to completely resist the effects of most Chakrabased attacks. 
               It functions the same as Spell Resistance (D20 Modern, p228), except it applies to techniques and Chakrabased effects only. 
               When gaining multiple Chakra Resistances, apply only the strongest that would affect an incoming effect.
             </p>
           </details>
-          <details>
-            <summary>Combat-Related Mechanics</summary>
+          <details class="details__content">
+            <summary class="summary__content">Combat-Related Mechanics</summary>
             <p class="details__body"> <span style="font-weight: 700;">Losing an Eye:</span>
               A character that uses only one eye suffers a -2 penalty to Spot and Search checks and takes twice the normal 
               distance penalties to such checks. Characters flanking a one-eyed character gain an additional +1 bonus to attack rolls. 
@@ -683,8 +690,8 @@
               taking a short rest may regain half his level or his Con modifier (whichever is higher) worth of Chakra.
             </p>
           </details>
-          <details>
-            <summary>Learn Checks</summary>
+          <details class="details__content">
+            <summary class="summary__content">Learn Checks</summary>
             <p class="details__body">
               A learn check is 1d20 + Character Level + Relevant Ability Modifier, made against a technique's Learn DC.
               Characters cannot take 20 on learn checks, but can take 10 if not stressed and not trying to conceal their training.
@@ -694,8 +701,8 @@
               Learn checks made for that technique until you run out of attempts or suc-cessfully learn it.
             </p>
           </details>
-          <details>
-            <summary>Attempts and Successes</summary>
+          <details class="details__content">
+            <summary class="summary__content">Attempts and Successes</summary>
             <p class="details__body">
               Aside from a learn DC, techniques also require a number of successes to learn, listed with their Learn DC. 
               The number of attempts you have is 1 + Relevant Ability Modifier, +1 per 2 Ranks of Relevant Skill. 
@@ -707,8 +714,8 @@
               This bonus lasts until you successfully learn the technique, or until you attempt to learn a different technique.
             </p>
           </details>
-          <details>
-            <summary>Learning Time</summary>
+          <details class="details__content">
+            <summary class="summary__content">Learning Time</summary>
             <p class="details__body">
               Learning a technique takes time. Every attempt made to Learn a technique takes 1 day per Rank of the technique, whether that 
               attempt was successful or not (exceptional rolls may change this, see below). A day of training consists of two blocks of four hours. 
@@ -728,8 +735,8 @@
               Such increases or reductions are rounded up to the nearest 4-hour block (which is half a day).
             </p>
           </details>
-          <details>
-            <summary>Methods of Learning</summary>
+          <details class="details__content">
+            <summary class="summary__content">Methods of Learning</summary>
             <p class="details__body">
               There are many ways to learn a technique, as described below. You can only use one of these methods at a time.
             </p>
@@ -761,16 +768,16 @@
               penalty to learn checks when doing so.
             </p>
           </details>
-          <details>
-            <summary>Performing Techniques - Attacks of Opportunity & Concentration</summary>
+          <details class="details__content">
+            <summary class="summary__content">Performing Techniques - Attacks of Opportunity & Concentration</summary>
             <p class="details__body">
               Performing a technique (except Taijutsu techniques) provokes attacks of opportunity in the same way as casting a spell would 
               (D20 Modern, Table 10-1: FX Actions in Combat, p331). When choosing to perform a technique defensively, the 
               Concentration DC is 15 + the Technique's Rank.
             </p>
           </details>
-          <details>
-            <summary>Perform Requirements</summary>
+          <details class="details__content">
+            <summary class="summary__content">Perform Requirements</summary>
             <p class="details__body">
               All techniques (except Training techniques) have Perform listed in their description. Perform Requirements always carry two components: 
               Skill Threshold and Perform DC. When you perform a technique, first check to see if you meet the Skill Threshold.
@@ -798,8 +805,8 @@
           <h2 class="font-green sizing-padding">Conditions</h2>
 
           <!-- Conditions Details -->
-          <details>
-            <summary>Ability Damaged</summary>
+          <details class="details__content">
+            <summary class="summary__content">Ability Damaged</summary>
             <p class="details__body">
               The character has lost 1 or more
               ability score points. The loss is temporary, and these
@@ -809,15 +816,15 @@
               or whatever) goes away.
             </p>
           </details>
-          <details>
-            <summary>Ability Drained</summary>
+          <details class="details__content">
+            <summary class="summary__content">Ability Drained</summary>
             <p class="details__body">
               The character has lost 1 or more ability
               score points. The loss is permanent.
             </p>
           </details>
-          <details>
-            <summary>Blinded</summary>
+          <details class="details__content">
+            <summary class="summary__content">Blinded</summary>
             <p class="details__body">
               The hero can’t see at all, and thus everything
               has total concealment to him. He has a 50% chance to
@@ -833,8 +840,8 @@
               them (at the GM’s discretion).
             </p>
           </details>
-          <details>
-            <summary>Cowering</summary>
+          <details class="details__content">
+            <summary class="summary__content">Cowering</summary>
             <p class="details__body">
               The hero is frozen in fear, loses her Dexterity
               bonus, and can take no actions. In addition, she takes
@@ -842,29 +849,29 @@
               10 rounds.
             </p>
           </details>
-          <details>
-            <summary>Dazed</summary>
+          <details class="details__content">
+            <summary class="summary__content">Dazed</summary>
             <p class="details__body">
               Unable to act, a dazed character can take no
               actions, but still gets the benefit of his normal Defense.
               This condition typically lasts 1 round.
             </p>
           </details>
-          <details>
-            <summary>Dazzled</summary>
+          <details class="details__content">
+            <summary class="summary__content">Dazzled</summary>
             <p class="details__body">
               A dazzled creature takes a -1 penalty to attack, Search and Spot rolls, typically due to an unexpected flash of bright light.
             </p>
           </details>
-          <details>
-            <summary>Dead</summary>
+          <details class="details__content">
+            <summary class="summary__content">Dead</summary>
             <p class="details__body">
               A character dies when his hit points drop to –10
               or lower, or when his Constitution drops to 0.
             </p>
           </details>
-          <details>
-            <summary>Deafened</summary>
+          <details class="details__content">
+            <summary class="summary__content">Deafened</summary>
             <p class="details__body">
               The hero can’t hear and takes a –4 penalty
               on initiative checks. He can’t make Listen checks. Heroes
@@ -873,16 +880,16 @@
               some of them (at the GM’s discretion).
             </p>
           </details>
-          <details>
-            <summary>Disabled</summary>
+          <details class="details__content">
+            <summary class="summary__content">Disabled</summary>
             <p class="details__body">
               The character has 0 hit points. She can take
               only a single move action or attack action, and takes 1
               point of damage after any action.
             </p>
           </details>
-          <details>
-            <summary>Dying</summary>
+          <details class="details__content">
+            <summary class="summary__content">Dying</summary>
             <p class="details__body">
               When a (conscious) character is reduced to
               below 0 hit points, they may make a Fortitude save
@@ -893,8 +900,8 @@
               dies or becomes stable.
             </p>
           </details>
-          <details>
-            <summary>Entangled</summary>
+          <details class="details__content">
+            <summary class="summary__content">Entangled</summary>
             <p class="details__body">
               An entangled character takes a –2 penalty
               on attack rolls in addition to a –4 penalty to Dexterity. If
@@ -905,8 +912,8 @@
               penalty to Speed Ranks.
             </p>
           </details>
-          <details>
-            <summary>Exhausted</summary>
+          <details class="details__content">
+            <summary class="summary__content">Exhausted</summary>
             <p class="details__body">
               Heroes who are exhausted move at half
               speed and cannot run or charge. Furthermore, they take a
@@ -916,8 +923,8 @@
               penalty to Speed Ranks.
             </p>
           </details>
-          <details>
-            <summary>Fascinated</summary>
+          <details class="details__content">
+            <summary class="summary__content">Fascinated</summary>
             <p class="details__body">
               A fascinated creature sits or stands quietly,
               wholly focused on the effect causing the condition,
@@ -932,8 +939,8 @@
               a standard action to do.
             </p>
           </details>
-          <details>
-            <summary>Fatigued</summary>
+          <details class="details__content">
+            <summary class="summary__content">Fatigued</summary>
             <p class="details__body">
               Characters who are fatigued can’t run or
               charge and take a penalty of –2 to Strength and Dexterity.
@@ -942,8 +949,8 @@
               to Speed Ranks.
             </p>
           </details>
-          <details>
-            <summary>Flat-Footed</summary>
+          <details class="details__content">
+            <summary class="summary__content">Flat-Footed</summary>
             <p class="details__body">
               A character who has not yet acted during
               a combat is flat-footed, not reacting normally to the situation.
@@ -951,8 +958,8 @@
               to Defense.
             </p>
           </details>
-          <details>
-            <summary>Grappled</summary>
+          <details class="details__content">
+            <summary class="summary__content">Grappled</summary>
             <p class="details__body">
               When grappled, a hero can’t undertake any
               action other than attacking with his bare hands, attacking
@@ -961,8 +968,8 @@
               on attacks from characters with whom he is grappling.
             </p>
           </details>
-          <details>
-            <summary>Helpless</summary>
+          <details class="details__content">
+            <summary class="summary__content">Helpless</summary>
             <p class="details__body">
               Paralyzed, sleeping, or unconscious characters
               are helpless. A helpless character has an effective
@@ -970,8 +977,8 @@
               coup de grace against a helpless character.
             </p>
           </details>
-          <details>
-            <summary>Invisible</summary>
+          <details class="details__content">
+            <summary class="summary__content">Invisible</summary>
             <p class="details__body">
               Become visually undetectable. Invisible
               creatures gain a +2 bonus to attack rolls against targets
@@ -979,8 +986,8 @@
               flat-footed.
             </p>
           </details>
-          <details>
-            <summary>Immobilized</summary>
+          <details class="details__content">
+            <summary class="summary__content">Immobilized</summary>
             <p class="details__body">
               An immobilized creature cannot
               move from its square (except by teleporting), and is
@@ -989,8 +996,8 @@
               Speed Ranks.
             </p>
           </details>
-          <details>
-            <summary>Nauseated</summary>
+          <details class="details__content">
+            <summary class="summary__content">Nauseated</summary>
             <p class="details__body">
               Characters who are nauseated are unable
               to attack or do anything else requiring attention or concentration.
@@ -998,24 +1005,24 @@
               single move action per turn.
             </p>
           </details>
-          <details>
-            <summary>Panicked</summary>
+          <details class="details__content">
+            <summary class="summary__content">Panicked</summary>
             <p class="details__body">
               A panicked character flees as fast as possible
               and cowers (see Cowering, above) if unable to get
               away. He defends normally but cannot attack.
             </p>
           </details>
-          <details>
-            <summary>Panicked</summary>
+          <details class="details__content">
+            <summary class="summary__content">Panicked</summary>
             <p class="details__body">
               A panicked character flees as fast as possible
               and cowers (see Cowering, above) if unable to get
               away. He defends normally but cannot attack.
             </p>
           </details>
-          <details>
-            <summary>Paralyzed</summary>
+          <details class="details__content">
+            <summary class="summary__content">Paralyzed</summary>
             <p class="details__body">
               Heroes who are paralyzed fall to the
               ground, unable to move (they have an effective, but not
@@ -1027,8 +1034,8 @@
               and ability checks.
             </p>
           </details>
-          <details>
-            <summary>Pinned</summary>
+          <details class="details__content">
+            <summary class="summary__content">Pinned</summary>
             <p class="details__body">
               A pinned character is held immobile (but not
               helpless) in a grapple. He takes a –4 penalty to his
@@ -1036,8 +1043,8 @@
               bonus to Defense.
             </p>
           </details>
-          <details>
-            <summary>Prone</summary>
+          <details class="details__content">
+            <summary class="summary__content">Prone</summary>
             <p class="details__body">
               An attacker who is prone (lying on the ground)
               takes a –4 penalty on melee attack rolls and can’t use
@@ -1046,29 +1053,29 @@
               to his Defense against melee attacks.
             </p>
           </details>
-          <details>
-            <summary>Shaken</summary>
+          <details class="details__content">
+            <summary class="summary__content">Shaken</summary>
             <p class="details__body">
               A shaken character takes a –2 penalty on
               attack rolls, saving throws, and skill checks.
             </p>
           </details>
-          <details>
-            <summary>Shaken</summary>
+          <details class="details__content">
+            <summary class="summary__content">Shaken</summary>
             <p class="details__body">
               A shaken character takes a –2 penalty on
               attack rolls, saving throws, and skill checks.
             </p>
           </details>
-          <details>
-            <summary>Staggered</summary>
+          <details class="details__content">
+            <summary class="summary__content">Staggered</summary>
             <p class="details__body">
               A staggered character cannot run or
               charge.
             </p>
           </details>
-          <details>
-            <summary>Stunned</summary>
+          <details class="details__content">
+            <summary class="summary__content">Stunned</summary>
             <p class="details__body">
               A character who becomes stunned loses her
               Dexterity bonus, drops what she is holding, and can take no
@@ -1076,8 +1083,8 @@
               to her Defense. The condition typically lasts 1 round.
             </p>
           </details>
-          <details>
-            <summary>Unconscious</summary>
+          <details class="details__content">
+            <summary class="summary__content">Unconscious</summary>
             <p class="details__body">
               An unconscious character is unable to
               defend himself. He is helpless and typically falls prone.

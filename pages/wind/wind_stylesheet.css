@@ -1,4 +1,3 @@
-/* HTML BODY HEADINGS*/
 html {
     box-sizing: border-box
 }
@@ -88,36 +87,6 @@ a:link {
     float: right!important
 }
 
-
-/* Font */
-.font-xlarge {
-    font-size: 24px !important;
-}
-
-.font-large {
-    font-size: 18px;
-}
-
-.font-green {
-    color: #fff!important;
-    background-color: #85b389!important;
-}
-
-.font-white,.font-hover-white:hover {
-    color: #000!important;
-    background-color: #fff!important
-}
-
-.font-hover-underline:hover {
-    color:#fff;
-    text-decoration: underline;
-}
-
-.font-light-grey {
-    color: #000!important;
-    background-color: #f1f1f1!important
-}
-
 /* Side Bar */
 .sidebar {
     height: 100%;
@@ -137,6 +106,19 @@ a:link {
     border: none;
     white-space: normal;
     float: none;
+    outline: 0
+}
+
+.sidebar-bar-details {
+    width: 100%;
+    color: white;
+    display: flex;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    cursor: pointer;
     outline: 0
 }
 
@@ -171,19 +153,6 @@ a:link {
     z-index: 2
 }
 
-.sidebar-bar-details {
-    width: 100%;
-    color: white;
-    display: flex;
-    padding: 8px 16px;
-    text-align: left;
-    border: none;
-    white-space: normal;
-    float: none;
-    cursor: pointer;
-    outline: 0
-}
-
 .sidebar-villages {
     list-style: none;
 }
@@ -199,61 +168,85 @@ a:link {
 .sidebar-bar-details summary::marker 
 { content: none; }
 
+
+/* Font */
+.font-xlarge {
+    font-size: 24px !important;
+}
+
+.font-large {
+    font-size: 18px;
+}
+
+.font-green {
+    color: #fff!important;
+    background-color: #85b389!important;
+}
+
+.font-white,.font-hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important
+}
+
+.font-hover-underline:hover {
+    color:#fff;
+    text-decoration: underline;
+}
+
+.font-light-grey {
+    color: #000!important;
+    background-color: #f1f1f1!important
+}
+
 /* Content */
-.bgimg-1 {
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: solid #111;
-}
-
-.bgimg-1 {
-    background-image: url("/images/Adjusted_World_Map.png");
-    height: 400px;
-}
-
-.caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-}
-
-.caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-}
-
-.img__grid {
+.gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        'fire lightning'
-        'wind water'
-        'earth .';
-    justify-items: center;
     gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-template-areas: 
+        'koizumi maki tashiro'
+        'kyo ginjou .';
 }
 
-.village__img {
-    width: 300px;
-    height: 300px;
-    border: solid 2px #111;
-    font-family: Verdana,sans-serif;
-}
-
-.village__label {
+.gallery__display {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    font-weight: 700;
-    background: #dfdfdf;
+    flex-direction: column;
+}
+
+.gallery__display__image {
+    height: 300px;
+    width: auto;
+    background-color: #e7e7e7;
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+
+.gallery__display__image--kohaku {
+    grid-area: kohaku;
+}
+
+.gallery__display__image--ichika {
+    grid-area: ichika;
+}
+
+.gallery__display__image--tomura {
+    grid-area: tomura;
+}
+
+.gallery__display--gochi {
+    grid-area: gochi;
+}
+
+.gallery__display__image:hover { 
+    transform: scale(1.5);
+}
+
+.gallery__display__label {
+    background-color: #85b389;
+    text-align: center;
+    color: white;
+    margin: 0;
 }
 
 
@@ -273,33 +266,29 @@ a:link {
         display:none
     }
 
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'koizumi'
+        'maki'
+        'tashiro'
+        'kyo'
+        'ginjou';
+        justify-items: center;
+    }
+
+    .gallery__display__image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .gallery__display__image:hover { 
+        transform: scale(1.2);
+    }
+
     .sizing-main {
         margin-left: 0!important;
         margin-right: 0!important
     }
-
-    .img__grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        'fire'
-        'lightning'
-        'wind'
-        'earth';
-        justify-items: center;
-    }
-
-    .village__img {
-        width: 200px;
-        height: 200px;
-        border: solid #111;
-    }
-
-    .caption span.border {
-        background-color: #111;
-        color: #fff;
-        padding: 3px;
-        font-size: 25px;
-    }
 }
-
